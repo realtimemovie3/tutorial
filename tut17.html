@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After Pseudo Selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        background-color: black;
+    }
+    header ::before{
+        content: "";
+        background: url( https://source.unsplash.com/random) no-repeat center center/cover;
+        position: absolute;
+        top:0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+      }
+
+      li {
+        font-family: "DynaPuff", cursive;
+        font-size: 22px;
+        list-style: none;
+        padding: 7px 35px;
+      }
+      .nevigation {
+        display: flex;
+      }
+      section {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 250px;
+        margin: 0px 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 108px 0px;
+      }
+      h2 {
+        font-size: 33px;
+      }
+      p {
+        font-size: 22px;
+        margin: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nevigation">
+          <li class="item">Home</li>
+          <li class="item">About</li>
+          <li class="item">Servies</li>
+          <li class="item">Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Welcome To Coding World</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta alias incidunt consequatur hic fugit, vitae voluptas expedita est dolores officia iusto, commodi voluptates molestias. Sed, consectetur iusto fuga eligendi voluptatem expedita. Magni nemo laudantium molestias dolore porro architecto quae, quidem cumque expedita quibusdam non minus officia eum ducimus id aut cupiditate at aspernatur sed. Nobis aspernatur odio voluptatibus sit asperiores quae nulla quas officiis. Quia in iusto, facilis atque, accusamus amet animi optio assumenda, placeat beatae laboriosam fuga eius sint ex obcaecati! Totam, minima! Odio mollitia quibusdam officiis quisquam fugiat cumque, doloremque sunt deleniti quis maiores aliquam fugit illo quo!
+      </p>
+    </section>
+  </body>
+</html>
